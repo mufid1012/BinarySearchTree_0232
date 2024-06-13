@@ -51,10 +51,19 @@ public:
         else if (element > parent->info) // if the value in the data field of the new node is greater than that
         {
             parent->rightchild = newNode; // make the right child of the parent point to the new node
-        }
-       
-       
+        }  
     }
+
+    void search(string element, Node*& parent, Node*& currentNode)
+    {
+        // This fuction searches the currentNode of the specified Node as null as the current Node of its parent
+        currentNode = ROOT;
+        parent = NULL;
+        while((currentNode !=NULL) && currentNode->info != element)
+      
+    
+    }
+
 
 
 };
